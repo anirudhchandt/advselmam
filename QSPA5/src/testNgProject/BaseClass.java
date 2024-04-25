@@ -30,7 +30,7 @@ public class BaseClass {
 	String actualLoginUrl = "https://demowebshop.tricentis.com/login";
 	String actualuserName = "anuram47@gmail.com";
 	String actualPassword = "test1234";
-
+//this is beforesuite
 	@BeforeSuite
 	public void beforeSuite() {
 		Reporter.log("Report formation", true);
