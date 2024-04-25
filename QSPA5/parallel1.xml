@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="true">
+
+	<test thread-count="5" name="FT">
+
+		<classes>
+			<class name="testScript.To_launch_Mi" />
+			<class name="testScript.To_launch_Myntra" />
+			<class name="testScript.To_launch_Flipcart" />
+			<class name="testScript.To_launch_Lorealparis" />
+			<class name="testScript.To_launch_Poco" />
+			<class name="testScript.To_launch_Meesho" />
+			<class name="testScript.To_launch_Purplle" />
+		</classes>
+	</test>
+	<test thread-count="5" name="ST" parallel="true">
+
+		<classes>
+			<class name="testScript.To_launch_DemoWebshop" />
+			<class name="testScript.To_launch_Sugar" />
+			<class name="testScript.To_launch_Samsung" />
+			<class name="testScript.To_launch_Motorola" />
+			<class name="testScript.To_launch_Apple" />
+
+		</classes>
+	</test>
+	<test thread-count="3" name="FT" parallel="true">
+		<classes>
+			<class name="testScript.To_launch_Ajio" />
+			<class name="testScript.To_launch_Lakme" />
+			<class name="testScript.To_launch_Maybelline" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

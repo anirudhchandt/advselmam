@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>TestNG:  Default test(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 05 12:50:23 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2313 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='workingWithUnitTestingTool.workingWithTimeOut.run()'><b>run</b><br>Test class: workingWithUnitTestingTool.workingWithTimeOut</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method workingWithUnitTestingTool.workingWithTimeOut.run() didn&apos;t finish within the time-out 2000
+	at java.base@11.0.20/sun.security.ssl.JsseJce.getKeyPairGenerator(JsseJce.java:242)
+	at java.base@11.0.20/sun.security.ssl.JsseJce$EcAvailability.&lt;clinit&gt;(JsseJce.java:403)
+	at java.base@11.0.20/sun.security.ssl.JsseJce.isEcAvailable(JsseJce.java:180)
+	at java.base@11.0.20/sun.security.ssl.CipherSuite$KeyExchange.isAvailable(CipherSuite.java:1136)
+	at java.base@11.0.20/sun.security.ssl.CipherSuite.isAvailable(CipherSuite.java:998)
+	at java.base@11.0.20/sun.security.ssl.SSLContextImpl.getApplicableCipherSuites(SSLContextImpl.java:384)
+	at java.base@11.0.20/sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuites(SSLContextImpl.java:347)
+	at java.base@11.0.20/sun.security.ssl.SSLContextImpl$AbstractTLSContext.&lt;clinit&gt;(SSLContextImpl.java:578)
+	at java.base@11.0.20/java.lang.Class.forName0(Native Method)
+	at java.base@11.0.20/java.lang.Class.forName(Class.java:315)
+	at java.base@11.0.20/java.security.Provider$Service.getImplClass(Provider.java:1950)
+	at java.base@11.0.20/java.security.Provider$Service.newInstance(Provider.java:1926)
+	at java.base@11.0.20/sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+	at java.base@11.0.20/sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+	at java.base@11.0.20/javax.net.ssl.SSLContext.getInstance(SSLContext.java:168)
+	at app//io.netty.handler.ssl.JdkSslContext$Defaults.init(JdkSslContext.java:99)
+	at app//io.netty.handler.ssl.JdkSslContext.&lt;clinit&gt;(JdkSslContext.java:73)
+	at app//io.netty.handler.ssl.SslContext.newClientContextInternal(SslContext.java:825)
+	at app//io.netty.handler.ssl.SslContextBuilder.build(SslContextBuilder.java:615)
+	at app//org.asynchttpclient.netty.ssl.DefaultSslEngineFactory.buildSslContext(DefaultSslEngineFactory.java:59)
+	at app//org.asynchttpclient.netty.ssl.DefaultSslEngineFactory.init(DefaultSslEngineFactory.java:74)
+	at app//org.asynchttpclient.netty.channel.ChannelManager.&lt;init&gt;(ChannelManager.java:104)
+	at app//org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:92)
+	at app//org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at app//org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:91)
+	at app//org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:43)
+	at app//org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:124)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:115)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:92)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:89)
+	at app//org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:43)
+	at app//org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriver.java:115)
+	at app//org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:105)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
+	at app//workingWithUnitTestingTool.workingWithTimeOut.run(workingWithTimeOut.java:11)
+	at java.base@11.0.20/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@11.0.20/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@11.0.20/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.20/java.lang.Thread.run(Thread.java:834)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1601687801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1601687801'><pre>org.testng.internal.thread.ThreadTimeoutException: Method workingWithUnitTestingTool.workingWithTimeOut.run() didn&apos;t finish within the time-out 2000
+	at java.base@11.0.20/sun.security.ssl.JsseJce.getKeyPairGenerator(JsseJce.java:242)
+	at java.base@11.0.20/sun.security.ssl.JsseJce$EcAvailability.&lt;clinit&gt;(JsseJce.java:403)
+	at java.base@11.0.20/sun.security.ssl.JsseJce.isEcAvailable(JsseJce.java:180)
+	at java.base@11.0.20/sun.security.ssl.CipherSuite$KeyExchange.isAvailable(CipherSuite.java:1136)
+	at java.base@11.0.20/sun.security.ssl.CipherSuite.isAvailable(CipherSuite.java:998)
+	at java.base@11.0.20/sun.security.ssl.SSLContextImpl.getApplicableCipherSuites(SSLContextImpl.java:384)
+	at java.base@11.0.20/sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuites(SSLContextImpl.java:347)
+	at java.base@11.0.20/sun.security.ssl.SSLContextImpl$AbstractTLSContext.&lt;clinit&gt;(SSLContextImpl.java:578)
+	at java.base@11.0.20/java.lang.Class.forName0(Native Method)
+	at java.base@11.0.20/java.lang.Class.forName(Class.java:315)
+	at java.base@11.0.20/java.security.Provider$Service.getImplClass(Provider.java:1950)
+	at java.base@11.0.20/java.security.Provider$Service.newInstance(Provider.java:1926)
+	at java.base@11.0.20/sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+	at java.base@11.0.20/sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+	at java.base@11.0.20/javax.net.ssl.SSLContext.getInstance(SSLContext.java:168)
+	at app//io.netty.handler.ssl.JdkSslContext$Defaults.init(JdkSslContext.java:99)
+	at app//io.netty.handler.ssl.JdkSslContext.&lt;clinit&gt;(JdkSslContext.java:73)
+	at app//io.netty.handler.ssl.SslContext.newClientContextInternal(SslContext.java:825)
+	at app//io.netty.handler.ssl.SslContextBuilder.build(SslContextBuilder.java:615)
+	at app//org.asynchttpclient.netty.ssl.DefaultSslEngineFactory.buildSslContext(DefaultSslEngineFactory.java:59)
+	at app//org.asynchttpclient.netty.ssl.DefaultSslEngineFactory.init(DefaultSslEngineFactory.java:74)
+	at app//org.asynchttpclient.netty.channel.ChannelManager.&lt;init&gt;(ChannelManager.java:104)
+	at app//org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:92)
+	at app//org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at app//org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:91)
+	at app//org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:43)
+	at app//org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:124)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:115)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:92)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:89)
+	at app//org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:43)
+	at app//org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriver.java:115)
+	at app//org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:105)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
+	at app//workingWithUnitTestingTool.workingWithTimeOut.run(workingWithTimeOut.java:11)
+	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.20/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.20/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base@11.0.20/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@11.0.20/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@11.0.20/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.20/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>2</td>
+<td>workingWithUnitTestingTool.workingWithTimeOut@2034b64c</td></tr>
+</table><p>
+</body>
+</html>

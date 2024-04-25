@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="workingWithUnitTestingTool.workingWithInclude">
+				<methods>
+					<exclude name="executeScript2"></exclude>
+				</methods>
+			</class>
+			<class name="workingWithUnitTestingTool.workingWithInclude1" />
+			<class name="workingWithUnitTestingTool.workingWithInclude2" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

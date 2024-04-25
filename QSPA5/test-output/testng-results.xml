@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[42 Bobber]]>
+    </line>
+    <line>
+      <![CDATA[R15]]>
+    </line>
+    <line>
+      <![CDATA[Hayabusa]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-04-18T18:51:17 IST" name="Suite" finished-at="2024-04-18T18:52:27 IST" duration-ms="69608">
+    <groups>
+    </groups>
+    <test started-at="2024-04-18T18:51:17 IST" name="Test" finished-at="2024-04-18T18:52:27 IST" duration-ms="69608">
+      <class name="workingWithUnitTestingTool.workingWithInclude">
+        <test-method signature="executeScript1()[pri:0, instance:workingWithUnitTestingTool.workingWithInclude@3f191845]" started-at="2024-04-18T18:51:17 IST" name="executeScript1" finished-at="2024-04-18T18:51:51 IST" duration-ms="34121" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[42 Bobber]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- executeScript1 -->
+      </class> <!-- workingWithUnitTestingTool.workingWithInclude -->
+      <class name="workingWithUnitTestingTool.workingWithInclude1">
+        <test-method signature="executeScript()[pri:0, instance:workingWithUnitTestingTool.workingWithInclude1@1a75e76a]" started-at="2024-04-18T18:51:51 IST" name="executeScript" finished-at="2024-04-18T18:52:23 IST" duration-ms="32258" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[R15]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- executeScript -->
+      </class> <!-- workingWithUnitTestingTool.workingWithInclude1 -->
+      <class name="workingWithUnitTestingTool.workingWithInclude2">
+        <test-method signature="executeScript()[pri:0, instance:workingWithUnitTestingTool.workingWithInclude2@5524cca1]" started-at="2024-04-18T18:52:23 IST" name="executeScript" finished-at="2024-04-18T18:52:27 IST" duration-ms="3071" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Hayabusa]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- executeScript -->
+      </class> <!-- workingWithUnitTestingTool.workingWithInclude2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

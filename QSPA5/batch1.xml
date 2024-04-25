@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes><!-- Test case for batch exe.... -->
+      <class name="testScript.To_launch_Mi"/>
+      <class name="testScript.To_launch_Myntra"/>
+      <class name="testScript.To_launch_Flipcart"/>
+      <class name="testScript.To_launch_Lorealparis"/>
+      <class name="testScript.To_launch_Poco"/>
+      <class name="testScript.To_launch_Meesho"/>
+      <class name="testScript.To_launch_Purplle"/>
+      <class name="testScript.To_launch_DemoWebshop"/>
+      <class name="testScript.To_launch_Sugar"/>
+      <class name="testScript.To_launch_Samsung"/>
+      <class name="testScript.To_launch_Motorola"/>
+      <class name="testScript.To_launch_Apple"/>
+      <class name="testScript.To_launch_Ajio"/>
+      <class name="testScript.To_launch_Lakme"/>
+      <class name="testScript.To_launch_Maybelline"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
